@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+	long n;
+	printf("Nhap n: ");
+	scanf_s("%ld", &n);
+	long dao = 0;
+	long m = n;
+	while (m > 0) {
+		dao = dao * 10 + m % 10;
+		m /= 10;
+	}
+	// 0
+	// 4321
+	if (dao == n){
+		printf("%ld la so thuan nghich\n", n);
+    }
+	else
+	{
+		printf("Khong thuan nghich\n");
+	}
+	return 0;
+}
