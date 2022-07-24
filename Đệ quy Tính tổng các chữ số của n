@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int sumALlDigits(int n) {
+	if (n < 10) {
+		return n;
+	}
+	else
+	{
+		return n % 10 + sumALlDigits(n / 10);
+	}
+}
+
+int main() {
+	int result = sumALlDigits(555555);
+	printf("%d", result);
+	return 0;
+}
