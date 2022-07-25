@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+	float r; 
+	float PI = 3.14;
+	printf("Nhap ban kinh duong tron: ");
+	scanf_s("%f", &r);
+	if (r <= 0) {
+		printf("Nhap r > 0");
+	}
+	else
+	{
+		printf("Chu vi duong tron ban kinh %f = %0.2f\n",r , 2 * PI * r);
+		printf("Dien tich duong tron ban kinh %f = %0.2f", r, PI * r * r);
+	}
+	return 0;
+}
