@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+	int a, b;
+	printf("Nhap vao hai so a, b: ");
+	scanf_s("%d %d", &a, &b);
+	if (a > 0 && b > 0) {
+		int c, s;
+		printf("%d, %d la cac canh cua hinh chu nhat\n", a, b);
+		printf("chu vi cua hinh chu nhat la: %d\n", c = (a + b) / 2);
+		printf("dien tich cua hinh chu nhat la: %d\n", s = a * b);
+	}
+	else
+	{
+		printf("Day khong phai la canh cua hinh chu nhat");
+	}
+	return 0;
+}
