@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdbool.h>
+
+bool ngTo(int n) {
+	if (n < 2) {
+		return false;
+	}
+	for (int i = 2; i <= sqrt(n); i++) {
+		if (n % i == 0) {
+			return false;
+		}
+	}
+	return true;
+}
+ 
+int main() {
+	int a, b;
+	printf("Nhap vao hai so a, b: ");
+	scanf_s("%d %d", &a, &b);
+	if (a > 0 && b > 0) {
+		int i;
+		for (i = a; i <= b; i++) {
+			if (ngTo(i)) {
+				printf("%d ", i);
+			}
+		}
+
+	}
+	else
+	{
+		printf("Hay nhap dieu kien a < b va hai so la so duong!");
+	}
+	return 0;
+}
