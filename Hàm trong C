@@ -1,0 +1,26 @@
+Hàm là một đoạn mã được đặt tên, có thể có tham số truyền vào
+Kiểu của tham số truyền vào cho hàm không liên quan gì đến giá trị trả về cho hàm
+Kiểu giá tri trả về  Tên Hàm(kiểu tham số 1, kiểu tham số 2,...)
+{
+// Công việc
+return giá trị;
+}
+Chú ý:
+Khi gặp câu lệnh return, hàm sẽ dừng lại, lấy giá trị đằng sau câu lệnh return gán cho tên hàm, người ta gọi việc này là hàm được trả về giá trị
+Kiểu của tham số truyền vào cho hàm không liên quan gì đến giá trị trả về của hàm
+Gọi hàm:
+Gọi bởi tên, kèm theo tham số truyền phù hợp
+Có thể gọi hàm lồng với hàm
+Có thể truyền tham số bởi các biến số
+Hàm void:
+Khi mà hàm không phải trả lại một giá trị cụ thể sau khi thực hiện công việc
+Ví dụ như in ra một nội dung nào đó. Khi đó, hàm sẽ nên là hàm void
+void Tên hàm(kiểu tham số 1, kiểu tham số 2...){
+// Công việc 
+// có thể có return nhưng đa số đều ko cần dùng đến;
+}
+Hàm void vẫn có thể có câu lệnh return!
+Người ta sử dụng câu lệnh return trong hàm void nhằm ngắt chuỗi hành động của hàm hoặc phục vụ mục đích cụ thể.
+Đệ quy:
+Đệ quy rất nguy hiểm và chậm
+Cùng tìm hiểu ví dụ về hàm hiển thị số từ 1 đến n không dùng đến vòng lặp
