@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h>
+bool KTNguyenTo(int);
+bool csNguyenTo(int);
+bool tongcsNguyenTo(int);
+
+int main() {
+	int i;
+	for (i = 2000000; i < 77777777; i++) {
+		if (KTNguyenTo(i) && tongcsNguyenTo(i) && csNguyenTo(i)) {
+			printf("%10d", i);
+		}
+	}
+}
+
+bool tongcsNguyenTo(int n) {
+	int sum = 0;
+	while (n > 0)
+	{
+		sum += n % 10;
+		n /= 10;
+	}
+	if (KTNguyenTo(sum)) {
+		return true;
+	}
+	return false;
+}
+
+bool csNguyenTo(int n) {
+	int c;
+	while (n > 0)
+	{
+		c = n % 10;
+		n /= 10;
+		if (!KTNguyenTo(c)) {
+			return false;
+		}
+	}
+	return true;
+}
+
+bool KTNguyenTo(int n) {
+	if (n < 2) {
+		return false;
+	}
+	int i;
+	for (i = 2; i <= sqrt(n); i++) {
+		if (n % i == 0) {
+			return false;
+		}
+	}
+	return true;
+}
