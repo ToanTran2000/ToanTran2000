@@ -1,0 +1,16 @@
+int a, b;
+Console.WriteLine("Nhap canh a: ");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Nhap canh b: ");
+b = Convert.ToInt32(Console.ReadLine());
+int Chuvi = (a + b) * 2;
+int Dientich = a * b;
+if (a > 0 && b > 0)
+{
+    Console.WriteLine("Chu vi la: {0}", Chuvi);
+    Console.WriteLine("Dien tich la: {0}", Dientich);
+}
+else
+{
+    Console.WriteLine("Vui long nhap lai canh a,b!!!");
+}
