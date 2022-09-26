@@ -1,0 +1,51 @@
+// Viết hoa đến N với N là số phần tử của Danh sách
+
+List<string> VietHoaDenN(List<string> danhsach, int N)
+{
+    List<string> lst = new List<string>() { };
+    foreach (string s in danhsach)
+    {
+        if (s.Length <= N)
+        {
+            // có độ dài nhỏ hơn N thì Viết hoa tất cả
+            lst.Add(s.ToUpper());
+        }
+        else
+        {
+            //cắt từ vị trí 0 đến vị trí N của chuỗi rồi viết hoa lên , còn lại giữ nguyên 
+            lst.Add(s.Substring(0, N).ToUpper() + s.Substring(N));
+        }
+    }
+    return lst;
+}
+
+List<string> SapXepDanhSach(List<string> lst)
+{
+    //lst.reverse();
+    List<string> kq = new List<string>();
+    lst.Sort();// sắp xếp lại danh sách từ bé đến lớn.
+    lst.Reverse();
+    foreach (string s in lst)
+    {
+        kq.Add(s);
+    }
+    return kq;
+}
+
+
+void InDanhSach(List<string> Ist)
+{
+
+    foreach (string s in Ist)
+    {
+        Console.WriteLine(s);
+    }
+}
+List<string> Ist = new List<string>() { "Tran Van A ", "Tran Van B", "Tran Van C" };
+int N = Ist.Count;
+Console.WriteLine(N);
+Ist = VietHoaDenN(Ist, N);
+InDanhSach(Ist);
+Console.WriteLine("=============");
+Ist = SapXepDanhSach(Ist);
+InDanhSach(Ist);
