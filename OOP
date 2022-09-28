@@ -1,0 +1,13 @@
+Lập trình hướng đối tượng (OOP)
+- Chỉ là một trong hơn 50 hình mẫu lập trình khác nhau(các hình mẫu khác như là lập trình hàm, LT meta, LT tác tử, LT hướng mảng, LT hướng sự kiện, LT nguyên mẫu,... vv)
+- OOP khá phổ dụng trong giới outsourcing  và phát triển sản phẩm hiện  thời
+class TenLop{
+Phamvitruycap PhuongThuc
+Phamvitruycap ThuocTinh
+Phamvitruycap HamTao/Huy
+Các biến/hàm Static
+}
+Hàm tạo (hay hàm khởi tạo, contructor...) được mô tả như sau:
+Là hàm được chạy ngay khi khai báo đối tượng
+Hàm tạo không có tên và trả lại đối tượng thuộc về lớp đó, tức là kiểu trả về chính là tên lớp
+Một lớp mặc định có sẵn một hàm tạo ngầm không truyền tham số và không làm gì cả
