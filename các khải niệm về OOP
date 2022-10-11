@@ -1,0 +1,21 @@
+sự tiến hóa của các phương pháp lập trình
+- Lập trình không có cấu trúc
+Trong lập trình hướng đối tượng, đối tượng được hiểu là 1 thực thể người vật hoặc 1 bảng dữ liệu
+Một đối tượng bao gồm 2 thông tin : thuộc tính và phương thức
+4 đặc điểm chính
+Tính đóng gói: khi bạn muốn các đối tượng trong chương trình không tương tác với nhau tự động th 
+Tính trừu tượng
+Tính kế thừa
+Tính đa hình
+Tên lớp
+Phạm vi truy cập
+Các thành phần trong lớp
+Để gọi đến các thuộc tính trong lớp
+<Tên đối tượng>.<Tên thuộc tính>;
+Để gọi đến phương thức bên trong lớp:
+<Tên đối tượng>.<Tên phương thức>.(<danh sách tham chiếu nếu có>);
+Struct là kiểu tham trị còn class là kiểu tham chiếu
+Struct không có destructor còn class có
+Không thể khai báo phương thức khởi tạo mặc định còn class thì có
+không có khả năng kế thừa còn class thì có
+Class trong lập trình hướng đối tượng là tập hợp các đối tượng có cùng chung đặc điểm, hành vi, phương thức hoạt động
