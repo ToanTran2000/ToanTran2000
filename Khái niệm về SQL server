@@ -1,0 +1,11 @@
+tại sao lại đặt tên là sql server
+dữ liệu có quan hệ
+1. dữ liệu dạng bảng
+2. chuẩn hóa dữ liệu
+3. Xây dựng lược đồ
+- Mỗi bảng dữ liệu nên có 1 khóa dữ liệu để phân biệt các bản ghi
+- Các trường dữ liệu nên là dữ liệu đơn nhất
+- Các trường dữ liệu có chứa nhiều hơn một thông tin thì nên được chia thành đơn nhất
+- Mối quan hệ 1-1 sẽ được gộp lại thành các trường cùng bảng
+- Mối quan hệ 1-n thể hiện có các quan hệ A có nhiều B hoặc A thuộc B
+- Mối quan hệ n-n sẽ được chuyển về quan hệ 1-n-1
